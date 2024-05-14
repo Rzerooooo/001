@@ -117,8 +117,9 @@ KBar_dic['amount']=np.array(KBar_amount_list)
 # Volume_array = np.array([])
 
 Date = start_date.strftime("%Y-%m-%d")
-st.subheader("設定一根 K 棒的時間長度(分鐘)")
-cycle_duration = st.number_input('輸入一根 K 棒的時間長度(單位:分鐘, 一日=1440分鐘)', value=1440, key="KBar_duration")
+st.subheader("設定一根 K 棒的時間長度")
+option = st.selectbox( "設定一根 K 棒的時間長度", ("以分鐘為單位", "以 日 為單位", "以 週 為單位", "以 月 為單位" ))
+cycle_duration = st.number_input('輸入一根 K 棒的時間長度', key="KBar_duration")
 
 
 #####新增下拉式選單#### #st.selectbox
