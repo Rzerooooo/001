@@ -34,7 +34,6 @@ stc.html(html_temp)
 ## 读取Pickle文件
 @st.cache_data(tt1=3600,show_spinner="正在加載資料...")
 def load_data(url):
-	load_data(url):
 	df = pd.read_pickle(url)
 	return df
 
