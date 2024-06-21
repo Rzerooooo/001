@@ -124,9 +124,9 @@ cycle_duration = st.number_input('輸入一根 K 棒的時間長度', key="KBar_
 
 #####新增下拉式選單#### #st.selectbox
 
-import streamlit as st
+#import streamlit as st
 
-option = st.selectbox( "設定一根 K 棒的時間長度", ("以 日 為單位", "以 週 為單位", "以 月 為單位"))
+#option = st.selectbox( "設定一根 K 棒的時間長度", ("以 日 為單位", "以 週 為單位", "以 月 為單位"))
 
 ############################################
 
